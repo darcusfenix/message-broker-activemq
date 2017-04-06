@@ -10,12 +10,12 @@ $   docker build -t darcusfenix/activemq:v1.0.0 .
 
 ```
 $   docker run -it -p 1883:1883 -p 61614:61614 -d \
-    --name broker-message \
+    --name message-broker \
     darcusfenix/activemq:v1.0.0
 ```
 
 ### How to follow logs ?
 
 ```
-$   docker logs --follow broker-message
+$   docker logs --follow message-broker
 ```
